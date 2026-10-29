@@ -2,116 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trident Risk Labs</title>
-  <link rel="stylesheet" href="/assets/styles.css">
-  <meta name="description" content="Trident Risk Labs — Secure infrastructure, smart analytics, real-time insights.">
-  <meta property="og:image" content="https://tridentrisklabs.com/assets/logo-header.png">
+  <style>
+    :root {
+      --navy: #002147;
+      --cyan: #00E5FF;
+      --gray-50: #fafafa;
+      --gray-100: #f5f5f5;
+      --gray-200: #e5e5e5;
+      --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background: white;
+      color: #1f2937;
+    }
+    img, picture, video { max-width: 100%; height: auto; }
+    a { color: var(--cyan); text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header { background: white; padding: 1rem 0; border-bottom: 1px solid #eee; }
+    .header .container { display: flex; align-items: center; justify-content: space-between; }
+    nav a { color: #333; margin-left: 1.5rem; font-size: 1rem; }
+    nav a:hover { color: var(--cyan); }
+    .hero { padding: 4rem 0; text-align: center; background: linear-gradient(to bottom right, #fff, #f8fafc); }
+    .hero h1 { font-size: 2.5rem; color: var(--navy); margin-bottom: 1rem; }
+    .hero p { font-size: 1.125rem; max-width: 600px; margin: 0 auto 2rem; color: #555; }
+    .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; text-decoration: none; }
+    .btn-primary { background: var(--navy); color: white; }
+    .btn-secondary { background: #e5e5e5; color: #333; }
+    .btn:hover { opacity: 0.9; }
+    section { padding: 4rem 0; }
+    .section-title { text-align: center; font-size: 2rem; color: var(--navy); margin-bottom: 2rem; }
+.services-grid, .products-grid, .blog-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .service-card, .product-card, .blog-post { background: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .product-image { font-size: 2rem; text-align: center; margin-bottom: 1rem; }
+    footer { background: #0f172a; color: white; padding: 2rem 0; text-align: center; }
+    footer p { margin: 0; color: #94a3b8; }
+  </style>
 </head>
 <body>
-  <header class="header">
+
+<header class="header">
+  <div class="container">
+    <h1>Trident Risk Labs</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
     <div class="container">
-      <a href="/" class="logo">
-        <img src="/logo-trident.svg" alt="Trident Risk Labs" width="140" height="40">
-      </a>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#products">Products</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <h1>Secure Infrastructure • Smart Analytics • Real-Time Insights</h1>
+      <p>Bridging compliance with engineering speed. Building resilient CI/CD pipelines, automating risk frameworks, and scaling cybersecurity so development moves fast without compromise.</p>
+      <a href="#contact" class="btn btn-primary">Schedule a Call</a>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Secure Infrastructure • Smart Analytics • Real-Time Insights</h1>
-        <p class="hero-text">Bridging compliance with engineering speed. Building resilient CI/CD pipelines, automating risk frameworks, and scaling cybersecurity so development moves fast without compromise.</p>
-        <a href="#contact" class="btn btn-primary">Schedule a Call</a>
-      </div>
-    </section>
-
-    <section id="services" class="services-section">
-      <div class="container">
-        <h2 class="section-title">Our Focus</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <h3>CI/CD Resilience</h3>
-            <p>Hardened pipelines that meet compliance without sacrificing velocity.</p>
-          </div>
-          <div class="service-card">
-            <div class="icon">⚙️</div>
-            <h3>Automated Risk Frameworks</h3>
-            <p>Turn audits into automations, not paperwork.</p>
-          </div>
-          <div class="service-card">
-            <div class="icon">🛡️</div>
-<h3>Enterprise Cybersecurity</h3>
-            <p>Scalable programs that protect assets AND accelerate dev.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="products" class="products-section">
-      <div class="container">
-        <h2 class="section-title">Digital Products</h2>
-        <div class="products-grid">
-          <div class="product-card">
-            <div class="product-image">🛡️</div>
-            <h3>Password Manager Pro</h3>
-            <p>Secure vault for credentials, passphrases, and keys.</p>
-            <a href="https://teespring.com" class="btn btn-secondary">View on Product Page</a>
-          </div>
-          <div class="product-card">
-            <div class="product-image">🔐</div>
-            <h3>Security Playbook Pack</h3>
-            <p>Templates for incident response, audits, and compliance.</p>
-            <a href="https://teespring.com" class="btn btn-secondary">View on Product Page</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="blog" class="blog-section">
-      <div class="container">
-        <h2 class="section-title">From the Lab</h2>
-        <div class="blog-grid">
-          <article class="blog-post">
-            <h3><a href="/blog/can-i-get-a-refund-on-crypto">Can I Get a Refund on Crypto?</a></h3>
-            <p>A deep dive into crypto regulations, liability, and recovery options.</p>
-            <span class="blog-date">August 5, 2025</span>
-          </article>
-          <article class="blog-post">
-            <h3><a href="/blog/how-to-compare-crypto-tax-software">How to Compare Crypto Tax Software</a></h3>
-            <p>Key features to look for when choosing crypto tax tools in 2025.</p>
-            <span class="blog-date">July 28, 2025</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <h2 class="section-title">Let's Talk</h2>
-<p class="contact-intro">Have questions or need help? Reach out and we’ll get back to you.</p>
-        <form action="#" method="POST" class="contact-form">
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Your Name" required>
-          </div>
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+  <section id="services">
     <div class="container">
-      <p>&copy; 2025 Trident Risk Labs. All Rights Reserved.</p>
+      <h2 class="section-title">Our Focus</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>CI/CD Resilience</h3>
+          <p>Hardened pipelines that meet compliance without sacrificing velocity.</p>
+        </div>
+        <div class="service-card">
+          <h3>Automated Risk Frameworks</h3>
+          <p>Turn audits into automations, not paperwork.</p>
+        </div>
+        <div class="service-card">
+          <h3>Enterprise Cybersecurity</h3>
+          <p>Scalable programs that protect assets AND accelerate dev.</p>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section id="products">
+    <div class="container">
+<h2 class="section-title">Digital Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">🛡️</div>
+          <h3>Password Manager Pro</h3>
+          <p>Secure vault for credentials, passphrases, and keys.</p>
+          <a href="#" class="btn btn-secondary">View on Product Page</a>
+        </div>
+        <div class="product-card">
+          <div class="product-image">🔐</div>
+          <h3>Security Playbook Pack</h3>
+          <p>Templates for incident response, audits, and compliance.</p>
+          <a href="#" class="btn btn-secondary">View on Product Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h2 class="section-title">From the Lab</h2>
+      <div class="blog-grid">
+        <article class="blog-post">
+          <h3><a href="#">Can I Get a Refund on Crypto?</a></h3>
+          <p>A deep dive into crypto regulations, liability, and recovery options.</p>
+          <span style="font-size: 0.875rem; color: #666;">August 5, 2025</span>
+        </article>
+        <article class="blog-post">
+          <h3><a href="#">How to Compare Crypto Tax Software</a></h3>
+          <p>Key features to look for when choosing crypto tax tools in 2025.</p>
+          <span style="font-size: 0.875rem; color: #666;">July 28, 2025</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Talk</h2>
+      <p>Have questions or need help? Reach out and we’ll get back to you.</p>
+      <form style="max-width: 500px; margin: 2rem auto;">
+        <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;">
+<textarea placeholder="Your Message" rows="5" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 0.5rem;"></textarea>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Trident Risk Labs. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
