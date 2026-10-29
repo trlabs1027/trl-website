@@ -1,145 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trident Risk Labs</title>
-  <link rel="stylesheet" href="/assets/styles.css"/>
-  <meta name="description" content="Trident Risk Labs — Secure infrastructure, smart analytics, real-time insights."/>
-  <meta property="og:image" content="https://tridentrisklabs.com/assets/logo-header.png"/>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <meta name="description" content="Trident Risk Labs — Secure infrastructure, smart analytics, real-time insights.">
+  <meta property="og:image" content="https://tridentrisklabs.com/assets/logo-header.png">
 </head>
-<body class="bg-white text-gray-900 font-sans antialiased">
-
-  <!-- Header -->
-  <header class="sticky top-0 bg-white border-b border-gray-200 z-50">
-    <div class="container mx-auto flex items-center justify-between px-6 py-4">
-      <div class="flex items-center gap-3">
-        <img src="/assets/logo.svg" alt="Trident Risk Labs" class="h-10 w-auto"/>
-        <span class="text-xl font-bold text-navy">Trident<span class="text-cyan">Risk</span>Labs</span>
-      </div>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="#services" class="hover:text-cyan transition">Services</a>
-        <a href="#products" class="hover:text-cyan transition">Products</a>
-        <a href="#blog" class="hover:text-cyan transition">Blog</a>
-        <a href="#contact" class="hover:text-cyan transition">Contact</a>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/logo-trident.svg" alt="Trident Risk Labs" width="140" height="40">
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-20 bg-gradient-to-b from-gray-50 to-white">
-    <h1 class="text-4xl md:text-5xl font-bold mb-6">
-      <span class="text-navy">Secure </span>
-      <span class="text-cyan">Infrastructure</span>
-      <span class="text-navy"> · Smart </span>
-      <span class="text-cyan">Analytics</span>
-      <span class="text-navy"> · Real-time </span>
-      <span class="text-cyan">Insights</span>
-    </h1>
-    <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
-      Bridging compliance with engineering speed. Building resilient CI/CD pipelines, automating risk frameworks, and scaling cybersecurity — so development moves fast without compromise.
-    </p>
-    <a href="#contact" class="inline-block px-8 py-3 bg-cyan text-white font-semibold rounded-lg hover:opacity-90 transition">Schedule a Call</a>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-navy mb-12">Our Focus</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="border border-gray-200 rounded-lg p-6 hover:border-cyan transition">
-          <h3 class="text-xl font-semibold mb-4 text-navy">CI/CD Resilience</h3>
-          <p class="text-gray-600">Hardened pipelines that meet compliance without sacrificing velocity.</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-6 hover:border-cyan transition">
-          <h3 class="text-xl font-semibold mb-4 text-navy">Automated Risk Frameworks</h3>
-          <p class="text-gray-600">Turn audits into automations, not paperwork.</p>
-        </div>
-        <div class="border border-gray-200 rounded-lg p-6 hover:border-cyan transition">
-          <h3 class="text-xl font-semibold mb-4 text-navy">Enterprise Cybersecurity</h3>
-          <p class="text-gray-600">Scalable programs that protect assets AND accelerate dev.</p>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Secure Infrastructure • Smart Analytics • Real-Time Insights</h1>
+        <p class="hero-text">Bridging compliance with engineering speed. Building resilient CI/CD pipelines, automating risk frameworks, and scaling cybersecurity so development moves fast without compromise.</p>
+        <a href="#contact" class="btn btn-primary">Schedule a Call</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Products -->
-  <section id="products" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-navy mb-12">Digital Products</h2>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Product Template -->
-        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/300x200" alt="Product" class="w-full h-48 object-cover"/>
-          <div class="p-5">
-            <h3 class="text-lg font-semibold mb-2">Password Manager Pro</h3>
-            <p class="text-sm text-gray-600 mb-4">Secure vault for credentials, passphrases, and keys.</p>
-            <a href="https://etsy.com/shop/tridentrisklabs" target="_blank" class="block text-center px-4 py-2 bg-cyan text-white text-sm font-medium rounded hover:opacity-90 transition">View on Etsy</a>
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Our Focus</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>CI/CD Resilience</h3>
+            <p>Hardened pipelines that meet compliance without sacrificing velocity.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon">⚙️</div>
+            <h3>Automated Risk Frameworks</h3>
+            <p>Turn audits into automations, not paperwork.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🛡️</div>
+<h3>Enterprise Cybersecurity</h3>
+            <p>Scalable programs that protect assets AND accelerate dev.</p>
           </div>
         </div>
-        <!-- More products can be looped server-side -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blog -->
-  <section id="blog" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-navy mb-12">From the Lab</h2>
-      <div class="max-w-3xl mx-auto space-y-8">
-        <article>
-          <h3 class="text-2xl font-semibold text-navy mb-2"><a href="/blog/post-1" class="hover:underline">Zero-Trust Patterns for Modern Infrastructures</a></h3>
-          <p class="text-gray-600 text-sm">A primer on applying zero-trust principles beyond IAM and into network and application layers.</p>
-          <time class="text-xs text-gray-500">Published: October 31, 2024</time>
-        </article>
-        <article>
-          <h3 class="text-2xl font-semibold text-navy mb-2"><a href="/blog/post-2" class="hover:underline">Automating Security Validation Pipelines</a></h3>
-          <p class="text-gray-600 text-sm">How DevSecOps teams can bake continuous security checks into CI/CD without slowing down.</p>
-          <time class="text-xs text-gray-500">Published: October 15, 2024</time>
-        </article>
+    <section id="products" class="products-section">
+      <div class="container">
+        <h2 class="section-title">Digital Products</h2>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">🛡️</div>
+            <h3>Password Manager Pro</h3>
+            <p>Secure vault for credentials, passphrases, and keys.</p>
+            <a href="https://teespring.com" class="btn btn-secondary">View on Product Page</a>
+          </div>
+          <div class="product-card">
+            <div class="product-image">🔐</div>
+            <h3>Security Playbook Pack</h3>
+            <p>Templates for incident response, audits, and compliance.</p>
+            <a href="https://teespring.com" class="btn btn-secondary">View on Product Page</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Instagram -->
-  <section id="instagram" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-navy mb-6">Follow Along</h2>
-      <p class="text-gray-600 mb-8"><a href="https://instagram.com/tridentrisklabs" class="text-cyan hover:underline">@tridentrisklabs</a></p>
-      <div id="insta-feed" class="grid sm:grid-cols-3 gap-4">
-        <!-- Instagram posts dynamically loaded -->
-        <p class="text-gray-500">Loading Instagram feed...</p>
+    <section id="blog" class="blog-section">
+      <div class="container">
+        <h2 class="section-title">From the Lab</h2>
+        <div class="blog-grid">
+          <article class="blog-post">
+            <h3><a href="/blog/can-i-get-a-refund-on-crypto">Can I Get a Refund on Crypto?</a></h3>
+            <p>A deep dive into crypto regulations, liability, and recovery options.</p>
+            <span class="blog-date">August 5, 2025</span>
+          </article>
+          <article class="blog-post">
+            <h3><a href="/blog/how-to-compare-crypto-tax-software">How to Compare Crypto Tax Software</a></h3>
+            <p>Key features to look for when choosing crypto tax tools in 2025.</p>
+            <span class="blog-date">July 28, 2025</span>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="container mx-auto px-6 max-w-lg">
-      <h2 class="text-3xl font-bold text-center text-navy mb-8">Let’s Talk</h2>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact"/>
-        <p><input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-cyan"/></p>
-        <p><input type="email" name="email" placeholder="Email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-cyan"/></p>
-        <p><textarea name="message" rows="5" placeholder="Message" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-cyan"></textarea></p>
-        <p class="text-xs text-gray-500">This site is protected by reCAPTCHA. Google Privacy Policy.</p>
-        <button type="submit" class="w-full mt-4 px-6 py-3 bg-cyan text-white font-semibold rounded-md hover:opacity-90 transition">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-navy text-white py-8">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-sm">&copy; 2024 Trident Risk Labs. All rights reserved.</p>
-      <div class="flex gap-4 text-sm mt-4 md:mt-0">
-        <a href="mailto:tridentrisklabs@gmail.com" class="hover:text-cyan transition">email</a>
-        <a href="https://instagram.com/tridentrisklabs" target="_blank" class="hover:text-cyan transition">instagram</a>
-        <a href="https://tridentrisklabs.com" class="hover:text-cyan transition">website</a>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Let's Talk</h2>
+<p class="contact-intro">Have questions or need help? Reach out and we’ll get back to you.</p>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
       </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Trident Risk Labs. All Rights Reserved.</p>
     </div>
   </footer>
-
-  <script src="/assets/main.js"></script>
 </body>
 </html>
