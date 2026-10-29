@@ -5,29 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trident Risk Labs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--navy:#002147;--cyan:#00e5ff;--gray-900:#111827}
+    :root { --navy:#002147; --cyan:#00e5ff; --gray-900:#111827; font-family: 'Inter', system-ui, sans-serif; }
     *{box-sizing:border-box}
-    body{margin:0;font-family:'Inter',system-ui,sans-serif;background:#fff;color:var(--gray-900)}
+    body{margin:0;background:#fff;color:var(--gray-900)}
+    img{max-width:100%;height:auto}
     header{background:#fff;border-bottom:1px solid #e5e7eb}
     .header{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-    .logo{display:flex;align-items:center;font-weight:700}
-    .logo svg{height:28px;width:auto}
-    .nav a{margin-left:1.5rem;font-size:.875rem;color:var(--gray-900);text-decoration:none}
+    .logo{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center}
+    .logo img{height:32px;width:auto}
+    .logo span{font-weight:700;color:#002147}
+    .logo .cyan{color:var(--cyan)}
+    .nav a{margin-left:1.5rem;color:#111827;text-decoration:none;font-size:.875rem}
     .nav a:hover{color:var(--cyan)}
     .hero{background:linear-gradient(135deg,#fff 0%,#f0f7ff 100%);text-align:center;padding:4rem 0}
-    .hero h1{font-size:clamp(1.75rem,4vw,2.5rem);color:var(--navy);margin-bottom:1rem}
-    .hero p{max-width:600px;margin:0 auto 2rem;font-size:1rem;color:#374151}
+    .hero h1{font-size:clamp(1.75rem,4vw,2.5rem);color:var(--navy);margin-bottom:.5rem}
+    .hero p{max-width:600px;margin:0 auto;font-size:1rem;color:#374151}
     .btn{display:inline-block;padding:.75rem 1.75rem;border-radius:.5rem;font-weight:600;text-decoration:none}
     .btn-primary{background:var(--navy);color:#fff}
     .btn-primary:hover{opacity:.9}
     section{padding:4rem 0}
     .section-title{text-align:center;font-size:1.75rem;color:var(--navy);margin-bottom:2.5rem}
     .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .card{background:#fff;border-radius:.75rem;padding:1.5rem;border:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,.05)}
-.card h3{font-size:1.125rem;margin-bottom:.5rem;color:var(--navy)}
+.card{background:#fff;border-radius:.75rem;padding:1.5rem;border:1px solid #e5e7eb;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .card h3{font-size:1.125rem;margin-bottom:.5rem;color:var(--navy)}
     .card p{font-size:.875rem;color:#4b5563}
     footer{background:var(--navy);color:#d1d5db;padding:2rem 0;text-align:center;font-size:.875rem}
     @media(max-width:640px){.nav{flex-wrap:wrap;gap:1rem}.nav a{margin:0}}
@@ -37,8 +39,8 @@
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
-        <svg viewBox="0 0 200 60" fill="none"><g stroke="#002147" stroke-width="8" fill="none"><path d="M100 0L150 20C155.387 16.062 159.405 13.46 162.401 99.203L116.361 55.753L120.4 46.524C116.77 42.705 112.67 41.251 13.315 43.802M9.315 45.246 8 49 8 55.48C8 62.812 12.64 72.658 18.108 72.658L24.812 72.658C29.577 72.658 32.857 72.457 37.686 69.203L13.695 128.763C2.248 11.825 0 87.168 0 75.48C0 62.812 7.565 52.078 46.351 51.832L51.09 65.582" fill="#00e5ff"/><path d="M100 20L110 30L115 35,120 35L120 44M120 44L15 120L25 120L126 120"></path><path d="M20 60L15 70L20 75L25 170L25 400ZM75 170L25 120L35 120L126 170ZM126 170L126 120L136 120"></path></g></svg>
-        <span>TRIDENT</span><span style="color:var(--cyan)"> Risk Labs</span>
+        <img src="logo-trident.svg" alt="Trident Risk Labs">
+        <div><span>TRIDENT</span> <span class="cyan">Risk Labs</span></div>
       </a>
       <nav class="nav">
         <a href="#services">Services</a>
@@ -51,59 +53,47 @@
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>Secure Infrastructure • Smart Analytics • Real-Time Insights</h1>
-        <p>Bridging compliance with engineering speed. Building resilient CI/CD pipelines, automating risk frameworks, and scaling cybersecurity so development moves fast without compromise.</p>
-        <a href="#contact" class="btn btn-primary">Schedule a Call</a>
-      </div>
+      <h1>Secure Infrastructure • Smart Analytics • Real-Time Insights</h1>
+      <p>Bridging compliance with engineering speed. Building resilient CI/CD pipelines, automating risk frameworks, and scaling cybersecurity so development moves fast without compromise.</p>
+      <a href="#contact" class="btn btn-primary">Schedule a Call</a>
     </section>
 
     <section id="services">
-      <div class="container">
-        <h2 class="section-title">Our Focus</h2>
-        <div class="grid">
-<div class="card"><h3>CI/CD Resilience</h3><p>Hardened pipelines that meet compliance without sacrificing velocity.</p></div>
-          <div class="card"><h3>Automated Risk Frameworks</h3><p>Turn audits into automations, not paperwork.</p></div>
-          <div class="card"><h3>Enterprise Cybersecurity</h3><p>Scalable programs that protect assets AND accelerate dev.</p></div>
-        </div>
+      <h2 class="section-title">Our Focus</h2>
+      <div class="grid">
+        <div class="card"><h3>CI/CD Resilience</h3><p>Hardened pipelines that meet compliance without sacrificing velocity.</p></div>
+        <div class="card"><h3>Automated Risk Frameworks</h3><p>Turn audits into automations, not paperwork.</p></div>
+        <div class="card"><h3>Enterprise Cybersecurity</h3><p>Scalable programs that protect assets AND accelerate dev.</p></div>
       </div>
     </section>
 
     <section id="products">
-      <div class="container">
-        <h2 class="section-title">Digital Products</h2>
-        <div class="grid">
-          <div class="card"><div style="text-align:center">🛡️</div><h3>Password Manager Pro</h3><p>Secure vault for credentials, passphrases, and keys.</p></div>
-          <div class="card"><div style="text-align:center">🔐</div><h3>Security Playbook Pack</h3><p>Templates for incident response, audits, and compliance.</p></div>
-        </div>
+      <h2 class="section-title">Digital Products</h2>
+      <div class="grid">
+<div class="card"><div style="text-align:center;margin-bottom:1rem">🛡️</div><h3>Password Manager Pro</h3><p>Secure vault for credentials, passphrases, and keys.</p></div>
+        <div class="card"><div style="text-align:center;margin-bottom:1rem">🔐</div><h3>Security Playbook Pack</h3><p>Templates for incident response, audits, and compliance.</p></div>
       </div>
     </section>
 
     <section id="blog">
-      <div class="container">
-        <h2 class="section-title">From the Lab</h2>
-        <div class="grid">
-          <article class="card"><h3><a href="#" style="color:var(--cyan)">Can I Get a Refund on Crypto?</a></h3><p>A deep dive into crypto regulations, liability, and recovery options.</p><small>August 5, 2025</small></article>
-          <article class="card"><h3><a href="#" style="color:var(--cyan)">How to Compare Crypto Tax Software</a></h3><p>Key features to look for when choosing crypto tax tools in 2025.</p><small>July 28, 2025</small></article>
-        </div>
+      <h2 class="section-title">From the Lab</h2>
+      <div class="grid">
+        <article class="card"><h3><a href="#" style="color:var(--cyan)">Can I Get a Refund on Crypto?</a></h3><p>A deep dive into crypto regulations, liability, and recovery options.</p><small>Aug 5, 2025</small></article>
+        <article class="card"><h3><a href="#" style="color:var(--cyan)">How to Compare Crypto Tax Software</a></h3><p>Key features to look for when choosing crypto tax tools in 2025.</p><small>Jul 28, 2025</small></article>
       </div>
     </section>
 
     <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Let's Talk</h2>
-        <p style="text-align:center;max-width:500px;margin:0 auto 2rem">Have questions or need help? Reach out and we'll get back to you.</p>
-        <form style="max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:1rem">
-<input type="email" placeholder="Your Email" required style="padding:0.75rem;border:1px solid #d1d5db;border-radius:0.5rem;font-family:inherit">
-          <textarea placeholder="Your Message" rows="4" required style="padding:0.75rem;border:1px solid #d1d5db;border-radius:0.5rem;font-family:inherit"></textarea>
-          <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
-        </form>
-      </div>
+      <h2 class="section-title">Let’s Talk</h2>
+      <p style="text-align:center;max-width:500px;margin:0 auto 2rem">Have questions or need help? Reach out and we’ll get back to you.</p>
+      <form style="max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:1rem">
+        <input type="email" placeholder="Your Email" required style="padding:.75rem;border:1px solid #d1d5db;border-radius:.5rem;font-family:inherit">
+        <textarea placeholder="Your Message" rows="4" required style="padding:.75rem;border:1px solid #d1d5db;border-radius:.5rem;font-family:inherit"></textarea>
+        <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Trident Risk Labs. All Rights Reserved.</p>
-  </footer>
+  <footer>&copy; 2025 Trident Risk Labs. All Rights Reserved.</footer>
 </body>
 </html>
